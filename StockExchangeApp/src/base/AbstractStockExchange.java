@@ -36,7 +36,7 @@ public abstract class AbstractStockExchange implements StockExchange {
 	}
 
 	@Override
-	public void connectTo(EventBus bus) {
+	public void connectTo(final EventBus bus) {//TODO: Retirar final
 		new Thread(new Runnable() {
 			@Override
 			public void run() {

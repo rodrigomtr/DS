@@ -6,9 +6,9 @@ import com.google.inject.Injector;
 public class MainEuronext {
 
 	public static void main(String[] args) {
-		String name = "Euronext";
-		String[] stocks = new String[] { "EDP", "BCP", "SONAE" };
-		System.out.println("Negotiating at " + name);
+		//String name = "Euronext";
+		//String[] stocks = new String[] { "EDP", "BCP", "SONAE" };
+		//System.out.println("Negotiating at " + name);
 		
 		EuronextModule configuration = new EuronextModule();
 		Injector injector = Guice.createInjector(configuration);
