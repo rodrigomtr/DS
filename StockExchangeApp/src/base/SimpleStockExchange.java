@@ -3,9 +3,13 @@ package base;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.google.inject.Inject;
+import com.google.inject.name.Named;
+
 public class SimpleStockExchange extends AbstractStockExchange {
 
-	public SimpleStockExchange(String name, String[] stocks) {
+	@Inject
+	public SimpleStockExchange(@Named("name") String name, @Named("stocks") String[] stocks) {
 		super(name, stocks);
 	}
 
